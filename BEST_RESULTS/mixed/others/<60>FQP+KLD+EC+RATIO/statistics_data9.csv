@@ -1,0 +1,6 @@
+Model,Average TNR,Average TPR,Average Test Score,Standard Deviation,Max Test Score,Min Test Score
+RBF,78.53,76.63,77.58,2.98,82.5,72.5
+LINEAR,75.3,75.53,75.42,5.21,81.83,65.83
+Only Ghost and RBF,75.0,73.23,74.12,3.61,78.17,67.0
+Only Ghost and LINEAR,73.57,74.5,74.03,5.24,79.67,65.17
+OLD,93.17,25.17,59.17,0.38,59.83,58.5
