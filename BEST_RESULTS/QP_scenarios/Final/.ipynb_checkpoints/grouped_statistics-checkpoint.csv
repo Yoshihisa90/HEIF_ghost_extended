@@ -1,4 +1,0 @@
-Model,Average Test Score Mean,Average Test Score Std,Model,Average Test Score Mean,Average Test Score Std,Model,Average Test Score Mean,Average Test Score Std
-RBF_LQP1,89.37,1.4,LINEAR_LQP1,82.9,1.74,OLD_LQP1,86.83,1.54
-RBF_SQP,86.9,1.67,LINEAR_SQP,61.81,1.74,OLD_SQP,50.43,0.67
-RBF_LQP2,55.08,2.43,LINEAR_LQP2,57.79,2.01,OLD_LQP2,57.27,1.19

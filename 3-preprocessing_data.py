@@ -168,62 +168,6 @@ def main(args):
         print('Done')
 
         
-        
-        
-#         if QP1 == QP2:
-#             output_file_name = get_second_combined_data(file_name, QP1, QP2, CTU, PRESET)
-#             output_path = args.output_path / output_file_name
-            
-#             # read .npz file
-#             data = np.load(input_path)
-#             depth_data = data['depth']
-#             pu_data = data['pu']
-#             luminance_data = data['luminance']
-#             chroma_data = data['chroma']
-#             qp_data = data['qp']
-        
-#             # count data for luminance and chroma
-#             depth_counts = np.bincount(depth_data)
-#             pu_counts = np.bincount(pu_data)
-#             luminance_counts = np.bincount(luminance_data)
-#             chroma_counts = np.bincount(chroma_data)
-#             qp_counts = np.bincount(qp_data)
-        
-#             # extend the luminance_counts to 36
-#             depth_counts_extended = np.zeros(52, dtype=int)
-#             depth_counts_extended[:len(depth_counts)] = depth_counts
-        
-#             pu_counts_extended = np.zeros(52, dtype=int)
-#             pu_counts_extended[:len(pu_counts)] = pu_counts
-        
-#             luminance_counts_extended = np.zeros(52, dtype=int)
-#             luminance_counts_extended[:len(luminance_counts)] = luminance_counts
-        
-#             chroma_counts_extended = np.zeros(52, dtype=int)
-#             chroma_counts_extended[:len(chroma_counts)] = chroma_counts
-            
-#             # convert the data and counts to DataFrame            
-#             depth_df = pd.DataFrame({'depth_value': np.arange(len(depth_counts_extended)), 'depth_counts': depth_counts_extended})
-#             pu_df = pd.DataFrame({'pu_value': np.arange(len(pu_counts_extended)), 'pu_counts': pu_counts_extended})
-#             luminance_df = pd.DataFrame({'luminance_value': np.arange(len(luminance_counts_extended)), 'luminance_counts': luminance_counts_extended})
-#             chroma_df = pd.DataFrame({'chroma_value': np.arange(len(chroma_counts_extended)), 'chroma_counts': chroma_counts_extended})
-#             qp_df = pd.DataFrame({'qp_value': np.arange(len(qp_counts)), 'qp_counts': qp_counts})
-
-#             # merge 2 DataFrames into single DataFrame
-#             combined_df = pd.concat([depth_df[['depth_value', 'depth_counts']],
-#                                      pu_df[['pu_value', 'pu_counts']],
-#                                      luminance_df[['luminance_value', 'luminance_counts']], 
-#                                      chroma_df[['chroma_value','chroma_counts']], 
-#                                      qp_df[['qp_value','qp_counts']]], axis=1)
-        
-#             # write the DataFrame to csv
-#             # combined_csv_file_name = f'{extracted_name}.csv'
-#             combined_df.to_csv(output_path, index=False)
-
-#             print('Done')
-                
-#         else:
-#             print("skip")
     
             
     elif args.command == 'run-triple':

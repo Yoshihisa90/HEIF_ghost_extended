@@ -21,7 +21,6 @@ from parameters import (single_iterator, second_iterator, triple_iterator,
                         get_single_265_data_Q, get_second_265_data_Q, get_triple_265_data_Q)
 
 
-
 def get_parser():
     parser = argparse.ArgumentParser()
     parser.add_argument('-t', '--tappdec-path', type=Path, default='.')
